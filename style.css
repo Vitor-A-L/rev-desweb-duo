@@ -1,0 +1,62 @@
+:root {
+    --main-bg-color: brown;
+    font-size: clamp(0, 9375rem, 0.9119rem + 0.1136vw, 1rem);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #233348;
+}
+
+header {
+    padding: 5vw 10vw 5vw 10vw;
+
+    & nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & ul {
+            display: flex;
+
+            & li {
+                margin: 0 40px;
+                position: relative;
+
+                & ul {
+                    display: none;
+                }
+            }
+
+            & li:hover ul {
+                display: block;
+                position: absolute;
+            }
+        }
+
+        & h1 {
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        & img {
+            border-radius: 100%;
+            background-color: #458FF6;
+            border-color: #458FF6;
+            border-width: 18px 22px 18px 22px;
+            border-collapse: collapse;
+        }
+    }
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul li.now a {
+    color: #1F1534;
+    font-weight: bold;
+}
